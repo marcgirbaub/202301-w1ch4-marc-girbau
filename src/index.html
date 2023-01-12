@@ -11,6 +11,20 @@
 </head>
 
 <body>
+  <header class="main-header">
+    <img class="main-header__image" src="img/favicon.png" alt="logo of a dog foot">
+    <div class="main-header__secondary-container navigation-div">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Live Demo</li>
+          <li>Live Demo Blocks</li>
+        </ul>
+      </nav>
+      <button class="navigation-div__button">Buy Now</button>
+    </div>
+    <i class="fa-solid fa-bars"></i>
+  </header>
   <main>
     <section class="pet-activities">
       <h1 class="pet-activities__title">Pet activites</h1>
@@ -19,16 +33,21 @@
     </section>
     <section>
       <ul class="activities-cards">
-        <li class="activities-cards__card card"><img src="img/01.jpg" alt="small dog with a toy in its mouth">
-          <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Toys Playtime</span>
-          </div>
+        <li class="activities-cards__card card"><a href="toys-playtime"><img src="img/01.jpg"
+              alt="small dog with a toy in its mouth">
+            <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Toys Playtime</span>
+            </div>
+          </a>
         </li>
-        <li class="activities-cards__card card"><img src="img/02.jpg" alt="kitten on a sofa">
-          <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Active Rest</span></div>
+        <li class="activities-cards__card card"><a href="active-rest"><img src="img/02.jpg" alt="kitten on a sofa">
+            <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Active Rest</span>
+            </div>
+          </a>
         </li>
-        <li class="activities-cards__card card"><img src="img/03.jpg"
-            alt="small dog playing in the outside with its tongue out">
-          <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Game Walks</span></div>
+        <li class="activities-cards__card card"><a href="game-walks"><img src="img/03.jpg"
+              alt="small dog playing in the outside with its tongue out">
+            <div><span class="uppercase">Activites</span> <span class="card__activity-type bold">Game Walks</span></div>
+          </a>
         </li>
       </ul>
 
