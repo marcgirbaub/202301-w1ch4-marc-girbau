@@ -147,6 +147,10 @@ li div {
     box-shadow: 0px -2px 9px 3px rgba(179, 179, 179, 1);
   }
 
+  .fa-solid {
+    display: none;
+  }
+
   header img {
     width: 2rem;
   }
@@ -173,6 +177,7 @@ li div {
   }
 
   .main-header__secondary-container {
+    visibility: visible;
     display: flex;
     gap: 1.5rem;
     align-items: center;
