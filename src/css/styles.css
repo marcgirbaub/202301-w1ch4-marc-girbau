@@ -61,6 +61,12 @@ main {
   font-family: var(--primary-font);
   letter-spacing: 0.5;
   font-weight: bold;
+  border: 1.5px solid var(--color-accent);
+}
+
+.pet-activities__button:hover {
+  color: var(--color-accent);
+  background-color: white;
 }
 
 ul {
