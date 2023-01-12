@@ -1,10 +1,13 @@
 @import url(/node_modules/@fontsource/nunito/400.css);
+@import url(/node_modules/@fontsource/nunito/800.css);
 
 :root {
   --color-primary: #181818;
   --color-accent: #ed6436;
 
   --block-padding-horizontal: 100px;
+
+  --primary-font: "Nunito", sans-serif;
 }
 
 *,
@@ -22,19 +25,28 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.375rem;
+  font-family: var(--primary-font);
+  min-width: 100vw;
 }
 
 .pet-activities {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1.25rem;
   padding-top: 1.875rem;
 }
 
 .pet-activities__title {
   color: var(--color-accent);
   margin: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.pet-activities__info {
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .pet-activities__button {
@@ -44,4 +56,27 @@ main {
   border: none;
   border-radius: 0 1rem 1rem 1rem;
   color: white;
+  text-transform: uppercase;
+  padding: 0.625rem 0.813rem;
+  font-family: var(--primary-font);
+  letter-spacing: 0.5;
+  font-weight: bold;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activities-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activities-cards__card img {
+  width: 100%;
+  border-radius: 1rem;
 }
